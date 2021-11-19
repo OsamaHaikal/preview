@@ -1,0 +1,116 @@
+
+
+/*============================ 
+Start Global Rules 
+=============================
+*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #438229;
+  --main-color-alt: #91b17f;
+  --dark: #1b1b22;
+  --dark-3: #050505;
+  --dark-light: #32323a;	
+   --space: 1rem;
+	 --page-width: 80ch;
+	 --font-family: 'Helvetica', sans-serif;
+	 --color-link: black;
+	 --color-active: royalblue;
+	 --ease: cubic-bezier(0.23, 1, 0.32, 1);
+	 --duration: 350ms;
+	 --section-offset: 0;
+  --white: #eaf0f2;
+  --white-light: #c8c8c8;
+  --main-transition: 0.3s;
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+  --section-background: #eaf0f2;
+  --box-shadow: 0.5rem 0.5rem 0 rgba(5, 179, 19, 0.2);
+  --text-shadow: 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.2);
+  --border: 0.2rem solid var(--main-color);
+}
+
+::-webkit-scrollbar{
+    width:3px;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--white-light);
+    border-radius: 25px;
+
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);  border-radius: 25px;
+
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #eaf0f2;
+
+  padding: 0;
+}
+body.dark {
+  background-color: #2f4858;
+  --dark: #fcfafb;
+  --dark-3: #636363;
+  --dark-light: #c8c8c8;
+  --white: #1b1b22;
+  --section-background: #2f4858;
+  --white-light: #32323a;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.d-flex {
+  display: flex;
+}
+.section {
+  padding: 4.5rem 0 2.5rem;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/*============================ 
+end Global Rules 
+=============================
+*/
